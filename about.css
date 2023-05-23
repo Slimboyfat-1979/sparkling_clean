@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-pink: #f3dddc;
+    --text-pink: #d33b62;
+    --pink-side-bars: 10vh;
+    --side-margin:  100%-50px;
+}
+
+
+@font-face {
+    font-family: 'Mistrully';
+    src: url('fonts/Mistrully.ttf');
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+
+    position: relative;
+    height: 100vh;
+}
+/* HEADER STYLING */
+
+header {
+    border-bottom: 1px solid black;
+}
+
+header nav {
+    width: 100vw;
+    min-height: var(--pink-side-bars);
+    background-color: var(--background-pink);
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+header nav h1 {
+    font-size: 2rem;
+}
+
+header nav h1 span {
+    color: var(--text-pink);
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    padding: 0 20px;
+    list-style: none;
+    color: var(--text-pink)
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: 100;
+    color: var(--text-pink);
+}
+
+#about {
+    width: calc(100% - 100px);
+    margin: 0 auto;
+}
+
+.about h1 {
+    margin-top: 20px;
+}
+
+img {
+    width: 200px;
+}
+
+
+.break {
+    clear: both;
+}
+
+.beck, .amber {
+    padding: 30px 0;
+}
+
+.beck img {
+    float: left;
+    margin-right: 20px;
+}
+
+.amber img {
+    float: right;
+    margin-left: 20px;
+}
+
+/*#footer {*/
+/*    clear: both;*/
+/*    width: 100%;*/
+/*    background-color: var(--background-pink);*/
+/*    text-align: center;*/
+/*    color: #666;*/
+/*    padding: 20px 0;*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*}*/
+
+#footer {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--background-pink);
+    color: #666;
+    bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+        header nav  {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .nav-contain ul {
+            margin-top: 20px;
+        }
+
+    img {
+        width: 120px;
+    }
+
+    p {
+        font-size: 0.75rem;
+        line-height: 1.5rem;
+    }
+
+    #footer {
+        position: static;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        background-color: var(--background-pink);
+        color: #666;
+    }
+
+}
+
